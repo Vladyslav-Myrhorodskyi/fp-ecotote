@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/fp-ecotote/",
-    "preview": "vite preview"
+    "build": "vite build --base=/project-team-dream9/",
+        "preview": "vite preview"
   },
   "devDependencies": {
     "glob": "^11.0.0",
