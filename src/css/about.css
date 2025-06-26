@@ -26,7 +26,6 @@
 }
 
 .about {
-<<<<<<< about-html
   background-image: url(/img/about/about-mobil-min.jpg);
   max-width: 1440px;
   background-color: #2e2f42;
@@ -41,6 +40,4 @@
   .about {
     background-image: url(/img/about/about-mobil@2x-min.jpg);
   }
-=======
->>>>>>> main
 }
