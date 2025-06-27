@@ -56,6 +56,12 @@
   line-height: 1.6;
   color: rgba(3, 10, 6, 0.6);
 }
+.support-input:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+.support-input:not(:placeholder-shown):valid {
+  border-color: green;
+}
 .support-button {
   height: 50px;
   border: 1px solid #030a06;
@@ -69,6 +75,11 @@
 }
 .support-button:hover,
 .support-button:focus {
+  background-color: transparent;
+  color: #030a06;
+}
+.support-button:active {
+  border-color: transparent;
   background-color: transparent;
   color: #030a06;
 }
