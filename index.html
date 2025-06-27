@@ -13,7 +13,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fira+Sans:wght@400;600&display=swap"
         rel="stylesheet">
     <script type="module" crossorigin src="/project-team-dream9/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-team-dream9/assets/index-0xZnEIo2.css">
+    <link rel="stylesheet" crossorigin href="/project-team-dream9/assets/index-Cm2OI5IC.css">
   </head>
   <body>
     <header class="header">
@@ -53,64 +53,56 @@
     </div>
 </section>
       <section class="support">
-  <div class="container">
-    <div>
-      <h3 class="support-title">Залишились питання? Зв'яжіться з нами!</h3>
-      <p class="support-text">Ми тут, щоб допомогти!</p>
+  <div class="container support-container">
+    <div class="support-form-wrapper">
+      <h2 class="support-title">Залишились питання? Зв'яжіться з нами!</h2>
+      <h3 class="support-subtitle">Ми тут, щоб допомогти!</h3>
 
       <form class="support-form">
-        <label for="user-name" class="support-input-text"
-          >Ім'я
+        <div class="support-form-field">
+          <label for="user-name" class="support-input-label">Ім'я</label>
           <input
             type="text"
             class="support-input"
-            name="user-name"
+            name="name"
+            minlength="5"
+            maxlength="64"
             id="user-name"
             placeholder="Іван"
+            required
           />
-        </label>
-        <label for="user-email" class="support-input-text"
-          >Електронна пошта
+        </div>
+        <div class="support-form-field">
+          <label for="user-email" class="support-input-label"
+            >Електронна пошта</label
+          >
           <input
             type="email"
             class="support-input"
-            name="user-email"
+            name="email"
             id="user-email"
             placeholder="hello@ecotote.com"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            required
           />
-        </label>
-        <label for="user-message" class="support-input-text"
-          >Повідомлення
+        </div>
+        <div class="support-form-field">
+          <label for="user-message" class="support-input-label"
+            >Повідомлення</label
+          >
           <textarea
             class="support-textarea"
             name="user-message"
             id="user-message"
             placeholder="Введіть своє повідомлення..."
+            rows="9"
+            max="500"
           ></textarea>
-        </label>
+        </div>
         <button class="support-button" type="submit">Надіслати</button>
       </form>
     </div>
-    <div>
-      <picture>
-        <source
-          media="(min-width: 1440px)"
-          srcset="../img/support/support-min.jpg 1x, ../img/support/support@2x-min.jpg 2x"
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="../img/support/support-tablet-min.jpg 1x, ../img/support/support-tablet@2x-min.jpg 2x"
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="../img/support/support-mobil-min.jpg 1x, ../img/support/support-mobil@2x-min.jpg 2x"
-        />
-        <img
-          src="../img/support/support-min.jpg"
-          alt="Eco bag with leaf design on a table with sketches"
-        />
-      </picture>
-    </div>
+    <div class="support-bacground"></div>
   </div>
 </section>
 
