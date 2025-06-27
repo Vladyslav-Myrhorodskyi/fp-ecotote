@@ -13,7 +13,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fira+Sans:wght@400;600&display=swap"
         rel="stylesheet">
     <script type="module" crossorigin src="/project-team-dream9/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-team-dream9/assets/index-DN5Ildyc.css">
+    <link rel="stylesheet" crossorigin href="/project-team-dream9/assets/index-DPHg2Lej.css">
   </head>
   <body>
     <header class="header">
@@ -53,10 +53,67 @@
     </div>
 </section>
       <section class="support">
-    <div class="container">
-        <h3>support</h3>
+  <div class="container">
+    <div>
+      <h3 class="support-title">Залишились питання? Зв'яжіться з нами!</h3>
+      <p class="support-text">Ми тут, щоб допомогти!</p>
+
+      <form class="support-form">
+        <label for="user-name" class="support-input-text"
+          >Ім'я
+          <input
+            type="text"
+            class="support-input"
+            name="user-name"
+            id="user-name"
+            placeholder="Іван"
+          />
+        </label>
+        <label for="user-email" class="support-input-text"
+          >Електронна пошта
+          <input
+            type="email"
+            class="support-input"
+            name="user-email"
+            id="user-email"
+            placeholder="hello@ecotote.com"
+          />
+        </label>
+        <label for="user-message" class="support-input-text"
+          >Повідомлення
+          <textarea
+            class="support-textarea"
+            name="user-message"
+            id="user-message"
+            placeholder="Введіть своє повідомлення..."
+          ></textarea>
+        </label>
+        <button class="support-button" type="submit">Надіслати</button>
+      </form>
     </div>
+    <div>
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="../img/support/support-min.jpg 1x, ../img/support/support@2x-min.jpg 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="../img/support/support-tablet-min.jpg 1x, ../img/support/support-tablet@2x-min.jpg 2x"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="../img/support/support-mobil-min.jpg 1x, ../img/support/support-mobil@2x-min.jpg 2x"
+        />
+        <img
+          src="../img/support/support-min.jpg"
+          alt="Eco bag with leaf design on a table with sketches"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
+
     </main>
 
     <footer class="footer">
