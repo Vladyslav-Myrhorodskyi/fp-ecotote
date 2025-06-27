@@ -1,12 +1,12 @@
 <section class="support">
-  <div class="container">
-    <div>
-      <h3 class="support-title">Залишились питання? Зв'яжіться з нами!</h3>
-      <p class="support-text">Ми тут, щоб допомогти!</p>
+  <div class="container support-container">
+    <div class="support-form-wrapper">
+      <h2 class="support-title">Залишились питання? Зв'яжіться з нами!</h2>
+      <h3 class="support-subtitle">Ми тут, щоб допомогти!</h3>
 
       <form class="support-form">
-        <label for="user-name" class="support-input-text"
-          >Ім'я
+        <div class="support-form-field">
+          <label for="user-name" class="support-input-label">Ім'я</label>
           <input
             type="text"
             class="support-input"
@@ -14,9 +14,11 @@
             id="user-name"
             placeholder="Іван"
           />
-        </label>
-        <label for="user-email" class="support-input-text"
-          >Електронна пошта
+        </div>
+        <div class="support-form-field">
+          <label for="user-email" class="support-input-label"
+            >Електронна пошта</label
+          >
           <input
             type="email"
             class="support-input"
@@ -24,47 +26,22 @@
             id="user-email"
             placeholder="hello@ecotote.com"
           />
-        </label>
-        <label for="user-message" class="support-input-text"
-          >Повідомлення
+        </div>
+        <div class="support-form-field">
+          <label for="user-message" class="support-input-label"
+            >Повідомлення</label
+          >
           <textarea
             class="support-textarea"
             name="user-message"
             id="user-message"
             placeholder="Введіть своє повідомлення..."
+            rows="9"
           ></textarea>
-        </label>
+        </div>
         <button class="support-button" type="submit">Надіслати</button>
       </form>
     </div>
-    <div>
-      <picture>
-        <source
-          media="(min-width: 1440px)"
-          srcset="
-            ../img/support/support-min.jpg    1x,
-            ../img/support/support@2x-min.jpg 2x
-          "
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ../img/support/support-tablet-min.jpg    1x,
-            ../img/support/support-tablet@2x-min.jpg 2x
-          "
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ../img/support/support-mobil-min.jpg    1x,
-            ../img/support/support-mobil@2x-min.jpg 2x
-          "
-        />
-        <img
-          src="../img/support/support-min.jpg"
-          alt="Eco bag with leaf design on a table with sketches"
-        />
-      </picture>
-    </div>
+    <div class="support-bacground"></div>
   </div>
 </section>
