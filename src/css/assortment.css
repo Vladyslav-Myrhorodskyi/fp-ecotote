@@ -1,3 +1,131 @@
 .assortment {
-  background-color: #1014f7;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.assortment-title {
+  font-family: 'Comfortaa', sans-serif;
+  min-width: 218px;
+  margin: 0 auto 32px auto;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.bags-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 0;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.bags-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ebf8ed;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: box-shadow 250ms ease;
+}
+
+.bags-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 32px;
+  background: #ebf8ed;
+  margin-bottom: 16px;
+}
+
+.bag-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.bags-name {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 8px;
+  line-height: 1.6;
+  text-align: center;
+  color: #030a06;
+}
+
+.bags-description {
+  font-family: 'Fira Sans', serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #030a06;
+  margin-bottom: 12px;
+}
+
+.bags-price {
+  font-family: 'Fira Sans', serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+  line-height: 1.6;
+  color: #030a06;
+}
+
+.bags-button {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 12px 24px;
+  border: 1px solid #030a06;
+  border-radius: 6px;
+  background-color: transparent;
+  font-size: 16px;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.6;
+  cursor: pointer;
+  color: #030a06;
+}
+
+.bags-button:hover,
+.bags-button:focus {
+  opacity: 0.5;
+}
+
+.bags-button:active {
+  background-color: #333;
+  border-color: #333;
+}
+
+@media screen and (min-width: 768px) {
+  .bags-list {
+    gap: 48px 24px;
+  }
+
+  .bags-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .assortment {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .bags-list {
+    gap: 64px 24px;
+  }
+
+  .bags-item {
+    width: calc((100% - 72px) / 4);
+  }
 }
