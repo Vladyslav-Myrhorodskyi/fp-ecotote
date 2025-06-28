@@ -55,3 +55,44 @@
   line-height: 1.6;
   color: #030a06;
 }
+
+@media screen and (min-width: 768px) {
+  .page-feedbacks {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .feedbacks-item {
+    gap: 24px;
+  }
+
+  .feedbacks-list {
+    column-gap: 24px;
+    row-gap: 32px;
+  }
+
+  .feedbacks-item {
+    max-width: 340px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .feedbacks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feedbacks-title {
+    max-width: 560px;
+    text-align: center;
+
+    /* margin: 0 auto; */
+    font-size: 48px;
+    margin-bottom: 80px;
+  }
+
+  .feedbacks-item {
+    max-width: 310px;
+  }
+}
