@@ -1,7 +1,6 @@
 .assortment {
   padding-top: 96px;
   padding-bottom: 96px;
-  font-family: 'Comfortaa', sans-serif;
 }
 
 .assortment-title {
@@ -98,8 +97,8 @@
 }
 
 .bags-button:active {
-  background-color: #333;
-  border-color: #333;
+  color: #113916;
+  border-color: #113916;
 }
 
 @media screen and (min-width: 768px) {
