@@ -68,20 +68,17 @@
   font-size: 16px;
   line-height: 1.6;
   cursor: pointer;
-  transition: background-color 250ms, transform 0.2s ease;
 }
-.support-button:hover {
-  opacity: 0.5;
-  transform: translateY(-2px);
-}
-
+.support-button:hover,
 .support-button:focus {
+  opacity: 0.5;
+}
+.support-button:active {
   background-color: #113916;
   opacity: 0.6;
 }
-.support-button:active {
+.support-button:disabled {
   opacity: 0.2;
-  transform: scale(0.98);
 }
 
 .support-bacground-picture {
