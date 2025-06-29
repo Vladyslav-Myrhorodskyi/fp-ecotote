@@ -40,7 +40,19 @@
   .hero {
     padding-top: 32px;
   }
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+  }
   .hero-title {
-    max-width: 704px;
+    flex: 1;
+  }
+  .hero-img {
+    flex: 1;
   }
 }
