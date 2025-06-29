@@ -8,14 +8,14 @@
   font-size: 40px;
   line-height: 1.2;
   letter-spacing: 0.01em;
-  color: #030a06;
+  /* color: #030a06; */
   margin-bottom: 20px;
 }
 .hero-text {
   /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.6;
-  color: #030a06;
+  /* color: #030a06; */
   margin-bottom: 24px;
 }
 .button.hero-button {
@@ -40,19 +40,32 @@
   .hero {
     padding-top: 32px;
   }
-  .hero-container {
+  .hero-text-block {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
     gap: 24px;
-    /* max-width: 1200px; */
-    /* margin: 0 auto; */
   }
   .hero-title {
-    flex: 1;
+    max-width: 340px;
   }
-  .hero-img {
-    flex: 1;
+  .hero-text {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+  .button.hero-button {
+    margin-bottom: 43px;
+    min-width: 148px;
+  }
+}
+/* DESCTOP */
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding-bottom: 64px;
+  }
+  .hero-text-block {
+    gap: 32px;
+  }
+  .hero-title {
+    max-width: 640px;
+    font-size: 56px;
   }
 }
