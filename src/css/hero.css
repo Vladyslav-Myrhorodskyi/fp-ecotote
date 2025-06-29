@@ -35,3 +35,12 @@
 .hero-img {
   border-radius: 40px;
 }
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 32px;
+  }
+  .hero-title {
+    max-width: 704px;
+  }
+}
