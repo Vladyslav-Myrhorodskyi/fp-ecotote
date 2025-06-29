@@ -5,6 +5,8 @@
   text-align: center;
   color: #fff;
   margin-bottom: 12px;
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
 }
 
 .about-subtitle {
@@ -54,7 +56,6 @@
     }
   }
 
-
   .about-title {
     margin-bottom: 16px;
   }
@@ -87,5 +88,4 @@
     font-size: 56px;
     margin-bottom: 24px;
   }
-
 }
