@@ -77,9 +77,14 @@
   background-color: #113916;
   opacity: 0.6;
 }
-.support-button:disabled {
+/* .support-button:disabled {
   opacity: 0.2;
+  cursor: not-allowed;
 }
+.support-button:enabled {
+  cursor: pointer;
+  background-color: #030a06;
+} */
 
 .support-bacground-picture {
   height: 428px;
