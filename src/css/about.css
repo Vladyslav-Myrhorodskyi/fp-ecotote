@@ -79,7 +79,7 @@
 
   @media screen and (min-resolution: 2x) {
     .about {
-      background-image: url(/img/about/about@2x-min.jpg);
+      background-image: url(/img/about/about@2fx-min.jpg);
     }
   }
 
