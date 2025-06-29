@@ -1,11 +1,16 @@
+.advantages {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
 .adv-subtitle {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
     /* padding-top: 64px; */
-    padding-top: 32px;
+    /* padding-top: 32px; */
     /* padding-bottom: 16px; */
-    padding-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 .adv-title {
@@ -16,7 +21,7 @@
     line-height: 1.2;
     letter-spacing: 0.01em;
     /* padding-bottom: 24px; */
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .adv-dscr {
@@ -26,7 +31,7 @@
     line-height: 1.6;
     max-width: 768px;
     /* padding-bottom: 80px; */
-    padding-bottom: 48px;
+    margin-bottom: 48px;
 }
 
 .adv-item-title {
@@ -64,7 +69,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 48px;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 
 .adv-img {
@@ -72,22 +77,27 @@
 }
 
 @media screen and (min-width: 768px) {
+
+  .advantages {
+      margin-top: 64px;
+      margin-bottom: 64px; }
+
   .adv-subtitle {
-      padding-top: 64px;
-      padding-bottom: 16px;
+      /* padding-top: 64px; */
+      margin-bottom: 16px;
     }
 
   .adv-title {
     font-size: 36px;
-    padding-bottom: 24px;}
+    margin-bottom: 24px;}
 
   .adv-dscr {
     font-size: 18px;
-    padding-bottom: 32px; }
+    margin-bottom: 32px; }
 
   .adv-list {
     gap: 24px;
-    margin-bottom: 64px;
+    /* margin-bottom: 64px; */
   }
 
   .adv-list-item {
@@ -95,7 +105,7 @@
   } 
 
   .third-item {
-    width: 100%;
+    flex: 0 0 100%;
   }
 
   .adv-item-title {
