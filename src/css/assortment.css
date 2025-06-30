@@ -81,13 +81,13 @@
   border-radius: 6px;
   background-color: transparent;
   font-size: 16px;
-  transition: opacity 200ms ease, color 200ms ease, border-color 200ms ease;
+  /* transition: opacity 200ms ease, color 200ms ease, border-color 200ms ease; */
   line-height: 1.6;
   cursor: pointer;
   color: #030a06;
 }
 
-.bags-button:hover,
+/* .bags-button:hover,
 .bags-button:focus {
   opacity: 0.5;
 }
@@ -95,7 +95,7 @@
 .bags-button:active {
   color: #113916;
   border-color: #113916;
-}
+} */
 
 @media screen and (min-width: 768px) {
   .bags-list {
