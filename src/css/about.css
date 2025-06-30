@@ -5,8 +5,7 @@
   text-align: center;
   color: #fff;
   margin-bottom: 12px;
-  animation: name duration timing-function delay iteration-count direction
-    fill-mode;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .about-subtitle {
