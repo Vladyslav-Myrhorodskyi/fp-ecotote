@@ -53,6 +53,7 @@
   .hero-text-block {
     flex-direction: row;
     gap: 24px;
+    margin-bottom: 20px;
   }
   .hero-title {
     max-width: 340px;
