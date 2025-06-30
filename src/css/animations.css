@@ -1,18 +1,189 @@
-/* @keyframes slide {
-  from {
-    transform: translateX(-140%) translateY(-50%);
-  }
-  to {
-    transform: translateX(-104%) translateY(-50%);
-  }
-}
-@keyframes stretch {
+@keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateX(-50%) translateY(100%) scale(0.2);
   }
   to {
     opacity: 1;
-    transform: translateX(-50%) translateY(100%) scale(1);
   }
-} */
+}
+
+/* 
+Для роботи анімації задати класи для клікабельних елементів:
+      1. посилань -                                          .global-link 
+      2. кнопки текстові на чорному фоні-                    .global-black-btn
+      3. кнопки текстові на прозорому фоні                   .global-transparent-btn
+      4. кнопки текстові на прозорому фоні без бордера       .global-btn
+      5. контейнери іконок на чорному фоні                   .global-black-icon-btn
+      6. контейнери іконок на прозорому фоні                 .global-transparent-icon-btn
+      7. контейнери іконок на прозорому фоні без бордера......global-icon-btn
+      8. іконкам..............................................global-icon
+    
+  */
+
+/*--посилання--*/
+.global-link {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.global-link:hover,
+.global-link:focus {
+  opacity: 0.5;
+}
+
+.global-link:active {
+  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+/*--кнопки текстові на чорному фоні--*/
+.global-black-btn {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.global-black-btn:hover,
+.global-black-btn:focus {
+  opacity: 0.5;
+}
+
+.global-black-btn:active {
+  background-color: #113916;
+  border-color: #113916;
+  opacity: 0.6;
+}
+
+.global-black-btn:disabled {
+  opacity: 0.2;
+}
+
+/*--кнопки текстові на прозорому фоні-- */
+.global-transparent-btn {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.global-transparent-btn:hover,
+.global-transparent-btn:focus {
+  opacity: 0.5;
+}
+
+.global-transparent-btn:active {
+  color: #113916;
+  border-color: #113916;
+  opacity: 0.6;
+}
+
+.global-transparent-btn:disabled {
+  opacity: 0.2;
+}
+
+/*--кнопки текстові на прозорому фоні без бордера-- */
+.global-text-btn {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.global-text-btn:hover,
+.global-text-btn:focus {
+  opacity: 0.5;
+}
+
+.global-text-btn:active {
+  color: #113916;
+  opacity: 0.6;
+}
+
+.global-text-btn:disabled {
+  opacity: 0.2;
+}
+
+/*--кнопки з іконками на чорному фоні--*/
+.global-black-icon-btn {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.global-black-icon-btn:hover,
+.global-black-icon-btn:focus {
+  opacity: 0.5;
+}
+
+.global-black-icon-btn:active {
+  background-color: #113916;
+  border-color: #113916;
+  opacity: 0.6;
+}
+
+.global-black-icon-btn:disabled {
+  opacity: 0.2;
+}
+
+/*--кнопки з іконками на прозорому фоні-- */
+.global-transparent-icon-btn {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.global-transparent-icon-btn:hover,
+.global-transparent-icon-btn:focus {
+  opacity: 0.5;
+}
+
+.global-transparent-icon-btn:active {
+  fill: #113916;
+  border-color: #113916;
+  opacity: 0.6;
+}
+
+.global-transparent-icon-btn:disabled {
+  opacity: 0.2;
+}
+
+/*--кнопки з іконками на прозорому фоні без бордера -- */
+.global-icon-btn {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.global-icon-btn:hover,
+.global-icon-btn:focus {
+  opacity: 0.5;
+}
+
+.global-icon-btn:active {
+  opacity: 0.6;
+}
+
+.global-icon-btn:disabled {
+  opacity: 0.2;
+}
+
+/*--все іконкі--*/
+
+.global-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.global-transparent-icon-btn:hover .global-icon,
+.global-transparent-icon-btn:focus .global-icon,
+.global-icon-btn:hover .global-icon,
+.global-icon-btn:focus .global-icon {
+  opacity: 0.5;
+}
+
+.global-transparent-icon-btn:active .global-icon,
+.global-icon-btn:active .global-icon {
+  fill: #113916;
+  opacity: 0.6;
+}
+
+.global-transparent-icon-btn:disabled .global-icon,
+.global-icon-btn:disabled .global-icon {
+  opacity: 0.2;
+}

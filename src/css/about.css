@@ -5,6 +5,7 @@
   text-align: center;
   color: #fff;
   margin-bottom: 12px;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .about-subtitle {
@@ -16,6 +17,7 @@
   text-align: center;
   color: #fff;
   margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .about-text {
@@ -23,6 +25,7 @@
   line-height: 1.6;
   text-align: center;
   color: #fff;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .about {
@@ -54,7 +57,6 @@
     }
   }
 
-
   .about-title {
     margin-bottom: 16px;
   }
@@ -79,7 +81,7 @@
 
   @media screen and (min-resolution: 2x) {
     .about {
-      background-image: url(/img/about/about@2x-min.jpg);
+      background-image: url(/img/about/about@2fx-min.jpg);
     }
   }
 
@@ -87,5 +89,4 @@
     font-size: 56px;
     margin-bottom: 24px;
   }
-
 }

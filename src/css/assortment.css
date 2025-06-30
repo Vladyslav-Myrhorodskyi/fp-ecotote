@@ -1,12 +1,12 @@
 .assortment {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .assortment-title {
   font-family: 'Comfortaa', sans-serif;
   min-width: 218px;
-  margin: 0 auto 32px auto;
+  margin: 0 auto 24px auto;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -29,10 +29,11 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: #ebf8ed;
+  background: transparent;
   border-radius: 20px;
   overflow: hidden;
   transition: box-shadow 250ms ease;
+  padding-bottom: 16px;
 }
 
 .bags-image {
@@ -40,7 +41,7 @@
   width: 100%;
   height: auto;
   border-radius: 32px;
-  background: #ebf8ed;
+  background: transparent;
   margin-bottom: 16px;
 }
 
@@ -48,24 +49,21 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 0 16px;
   text-align: center;
+  padding: 0 16px;
 }
 
 .bags-name {
   font-weight: 600;
   font-size: 18px;
-  margin-bottom: 8px;
   line-height: 1.6;
   text-align: center;
-  color: #030a06;
 }
 
 .bags-description {
   font-size: 14px;
   line-height: 1.6;
-  color: #030a06;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .bags-price {
@@ -73,19 +71,17 @@
   font-weight: 600;
   margin-bottom: 0;
   line-height: 1.6;
-  color: #030a06;
 }
 
 .bags-button {
   width: 100%;
   margin-top: 16px;
-  margin-bottom: 16px;
   padding: 12px 24px;
   border: 1px solid #030a06;
   border-radius: 6px;
   background-color: transparent;
   font-size: 16px;
-
+  transition: opacity 200ms ease, color 200ms ease, border-color 200ms ease;
   line-height: 1.6;
   cursor: pointer;
   color: #030a06;
@@ -103,7 +99,7 @@
 
 @media screen and (min-width: 768px) {
   .bags-list {
-    gap: 48px 24px;
+    gap: 24px 24px;
   }
 
   .bags-item {
@@ -113,15 +109,19 @@
 
 @media screen and (min-width: 1440px) {
   .assortment {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 
   .bags-list {
-    gap: 64px 24px;
+    gap: 32px 24px;
   }
 
   .bags-item {
     width: calc((100% - 72px) / 4);
+  }
+
+  .assortment-title {
+    font-size: 48px;
   }
 }
