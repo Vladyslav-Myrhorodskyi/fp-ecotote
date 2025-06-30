@@ -15,6 +15,7 @@
             maxlength="64"
             id="user-name"
             placeholder="Іван"
+            autocomplete="name"
             required
           />
         </div>
@@ -28,7 +29,8 @@
             name="email"
             id="user-email"
             placeholder="hello@ecotote.com"
-            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,3}$"            
+            autocomplete="email"
             required
           />
         </div>
@@ -42,10 +44,12 @@
             id="user-message"
             placeholder="Введіть своє повідомлення..."
             rows="9"
-            max="500"
+            maxlength="500"
           ></textarea>
         </div>
-        <button class="support-button" type="submit">Надіслати</button>
+        <button class="support-button global-black-btn" type="submit">
+          Надіслати
+        </button>
       </form>
     </div>
     <div class="support-bacground-picture"></div>
