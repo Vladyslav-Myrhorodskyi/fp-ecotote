@@ -19,7 +19,7 @@
   line-height: 1.6;
   margin-bottom: 24px;
 }
-.button.hero-button {
+.hero-button {
   display: inline-block;
   min-width: 288px;
   border: 1px solid #030a06;
@@ -33,14 +33,14 @@
   cursor: pointer;
   transition: 0.3s ease 0s;
 }
-.button.hero-button:hover,
+/* .button.hero-button:hover,
 .button.hero-button:focus {
   opacity: 0.5;
 }
 .button.hero-button:active {
   background-color: #113916;
   opacity: 0.6;
-}
+} */
 .hero-img {
   width: 100%;
   border-radius: 40px;

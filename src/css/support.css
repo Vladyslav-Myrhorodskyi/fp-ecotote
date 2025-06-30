@@ -69,14 +69,14 @@
   line-height: 1.6;
   cursor: pointer;
 }
-.support-button:hover,
+/* .support-button:hover,
 .support-button:focus {
   opacity: 0.5;
 }
 .support-button:active {
   background-color: #113916;
   opacity: 0.6;
-}
+} */
 /* .support-button:disabled {
   opacity: 0.2;
   cursor: not-allowed;

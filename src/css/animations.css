@@ -17,6 +17,8 @@
       6. контейнери іконок на прозорому фоні                 .global-transparent-icon-btn
       7. контейнери іконок на прозорому фоні без бордера......global-icon-btn
       8. іконкам..............................................global-icon
+      9. контейнери логотипів.................................global-logo
+      10.логотип..............................................global-logo-icon
     
   */
 
@@ -24,7 +26,6 @@
 .global-link {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .global-link:hover,
@@ -163,7 +164,7 @@
   opacity: 0.2;
 }
 
-/*--все іконкі--*/
+/*--всі іконкі--*/
 
 .global-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -187,3 +188,28 @@
 .global-icon-btn:disabled .global-icon {
   opacity: 0.2;
 }
+
+/*--всі логотипи--*/
+.global-logo-icon {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.global-logo:hover .global-logo-icon,
+.global-logo:focus .global-logo-icon {
+  opacity: 0.5;
+}
+
+.global-logo:active .global-logo-icon {
+  opacity: 0.6;
+}
+
+/*--ефект виділення--*/
+/* .lift-on-hover {
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.lift-on-hover:hover,
+.lift-on-hover:focus {
+  transform: scale(1.05);
+} */
