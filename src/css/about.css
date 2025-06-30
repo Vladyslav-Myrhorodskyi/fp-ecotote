@@ -5,6 +5,8 @@
   text-align: center;
   color: #fff;
   margin-bottom: 12px;
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
 }
 
 .about-subtitle {
@@ -54,7 +56,6 @@
     }
   }
 
-
   .about-title {
     margin-bottom: 16px;
   }
@@ -79,7 +80,7 @@
 
   @media screen and (min-resolution: 2x) {
     .about {
-      background-image: url(/img/about/about@2x-min.jpg);
+      background-image: url(/img/about/about@2fx-min.jpg);
     }
   }
 
@@ -87,5 +88,4 @@
     font-size: 56px;
     margin-bottom: 24px;
   }
-
 }
