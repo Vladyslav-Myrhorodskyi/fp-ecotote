@@ -1,3 +1,257 @@
 .header {
-  background-color: #0ed307;
+  background-color: #75d281;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  line-height: 160%;
+  padding: 0 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding: 0;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+@media screen and (min-width: 1440px) {
+  .logo {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
+
+.logo-icon {
+  width: 84px;
+  height: 36px;
+  /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+@media screen and (min-width: 1440px) {
+  .logo-icon {
+    width: 106px;
+    height: 45px;
+  }
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .menu {
+    display: flex;
+  }
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+@media screen and (min-width: 1440px) {
+  .menu-list {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .menu-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.address {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .address {
+    display: flex;
+  }
+
+  .address-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.adress-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+  .adress-list {
+    /* display: flex; */
+    flex-direction: row;
+    /* gap: 16px; */
+  }
+}
+
+.address-link {
+  font-style: normal;
+}
+
+.header-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .header-btn {
+    justify-content: right;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-btn {
+    display: none;
+  }
+}
+
+.burger-btn {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Menu */
+.mobil-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #75d281;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+  z-index: 999;
+}
+
+.mobil-menu.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .mobil-menu {
+    display: none;
+  }
+}
+
+.mobil-menu .container {
+  background-color: #75d281;
+  padding: 0 0;
+}
+
+.mobil-menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 604px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #75d281;
+  font-size: 16px;
+  line-height: 160%;
+  color: #030a06;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .mobil-menu-container {
+    min-height: 608px;
+  }
+}
+
+.mobil-menu.is-open .mobil-menu-container {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modal-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-menu-header {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.mobil-menu-close {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  justify-content: right;
+  align-items: center;
+}
+
+.mobil-menu-close-icon {
+  fill: #030a06;
+  width: 16px;
+  height: 16px;
+}
+
+.mobil-menu-nav {
+  margin-bottom: auto;
+  padding: 32px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobil-menu-nav {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.mobil-address {
+  padding: 32px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobil-address {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }

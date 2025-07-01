@@ -5,6 +5,7 @@
   text-align: center;
   color: #fff;
   margin-bottom: 12px;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .about-subtitle {
@@ -16,6 +17,7 @@
   text-align: center;
   color: #fff;
   margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .about-text {
@@ -23,12 +25,13 @@
   line-height: 1.6;
   text-align: center;
   color: #fff;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .about {
   background-image: url(/img/about/about-mobil-min.jpg);
   max-width: 1440px;
-  background-color: #2e2f42;
+  background-color: #75d281;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -39,5 +42,51 @@
 @media screen and (min-resolution: 2x) {
   .about {
     background-image: url(/img/about/about-mobil@2x-min.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    background-image: url(/img/about/about-tablet-min.jpg);
+    padding: 80px 0;
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .about {
+      background-image: url(/img/about/about-tablet@2x-min.jpg);
+    }
+  }
+
+  .about-title {
+    margin-bottom: 16px;
+  }
+
+  .about-subtitle {
+    margin-bottom: 24px;
+  }
+
+  .about-text {
+    font-size: 18px;
+    max-width: 573px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about {
+    background-image: url(/img/about/about-min.jpg);
+    padding-top: 112px;
+    padding-bottom: 94px;
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .about {
+      background-image: url(/img/about/about@2fx-min.jpg);
+    }
+  }
+
+  .about-subtitle {
+    font-size: 56px;
+    margin-bottom: 24px;
   }
 }

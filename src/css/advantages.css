@@ -1,3 +1,151 @@
 .advantages {
-  background-color: #10afd6;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.adv-subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    /* padding-top: 64px; */
+    /* padding-top: 32px; */
+    /* padding-bottom: 16px; */
+    margin-bottom: 12px;
+}
+
+.adv-title {
+  font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    /* font-size: 48px; */
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    /* padding-bottom: 24px; */
+    margin-bottom: 20px;
+}
+
+.adv-dscr {
+    font-weight: 400;
+    /* font-size: 18px; */
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 768px;
+    /* padding-bottom: 80px; */
+    margin-bottom: 48px;
+}
+
+.adv-item-title {
+  font-family: "Comfortaa",
+      sans-serif;
+    font-weight: 700;
+    /* font-size: 32px; */
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    width: 100%;
+    /* padding-top: 32px; */
+    margin-top: 8px;
+    /* padding-bottom: 24px; */
+    margin-bottom: 4px;
+}
+
+.adv-item-dscr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    /* padding-bottom: 64px; */
+}
+
+
+ /* .adv-list {
+  display: inline-flex;
+  gap: 24px;
+}
+
+.adv-list-item {
+  width: calc((100% - 24px) / 3);
+} */
+.adv-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  /* margin-bottom: 32px; */
+}
+
+.adv-img {
+  border-radius: 32px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .advantages {
+      padding-top: 64px;
+      padding-bottom: 64px; }
+
+  .adv-subtitle {
+      /* padding-top: 64px; */
+      margin-bottom: 16px;
+    }
+
+  .adv-title {
+    font-size: 36px;
+    margin-bottom: 24px;}
+
+  .adv-dscr {
+    font-size: 18px;
+    margin-bottom: 32px; }
+
+  .adv-list {
+    gap: 24px;
+    /* margin-bottom: 64px; */
+  }
+
+  .adv-list-item {
+    flex-basis: calc((100% - 24px) / 2); 
+    flex-grow: 1;
+    width: auto;
+  } 
+
+  .third-item {
+    flex: 0 0 100%;
+  }
+
+  .adv-item-title {
+     font-size: 24px;
+    margin-top: 32px;
+    margin-bottom: 8px; }
+
+
+  .second-title {
+    margin-bottom: 43px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  
+  .adv-title {
+      font-size: 48px;}
+
+ .adv-dscr {
+  margin-bottom: 80px;
+}
+
+.adv-item-title {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+
+ .adv-list {
+  display: inline-flex;
+  gap: 24px;
+}
+
+.adv-list-item {
+  width: calc((100% - 24px) / 3);
+  max-width: 421px;
+}
+
+
+
 }
