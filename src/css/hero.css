@@ -21,7 +21,9 @@
 }
 .hero-button {
   display: inline-block;
-  min-width: 288px;
+  /* min-width: 288px; */
+  max-width: 288px;
+  width: 100%;
   border: 1px solid #030a06;
   border-radius: 6px;
   padding: 12px;
@@ -42,7 +44,10 @@
   opacity: 0.6;
 } */
 .hero-img {
+  max-width: 288px;
   width: 100%;
+  max-height: 285px;
+  height: auto;
   border-radius: 40px;
 }
 /* TABLET */
@@ -63,7 +68,11 @@
     margin-bottom: 32px;
   }
   .button.hero-button {
-    min-width: 148px;
+    max-width: 148px;
+  }
+  .hero-img {
+    max-width: 704px;
+    max-height: 267px;
   }
 }
 /* DESCTOP */
@@ -78,5 +87,9 @@
   .hero-title {
     max-width: 640px;
     font-size: 56px;
+  }
+  .hero-img {
+    max-width: 1312px;
+    max-height: 498px;
   }
 }
