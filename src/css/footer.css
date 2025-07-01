@@ -114,13 +114,14 @@
     margin: 0 auto;
   }
 
-  .footer-logo-link {
-    padding-bottom: 32px;
-  }
 
   .icon-footer-logo {
     width: 164px;
     height: 70px;
+  }
+
+  .footer-logo-link {
+    margin-bottom: 32px;
   }
 
   .footer-nav-list {
@@ -166,6 +167,10 @@
     margin: 0 auto;
   }
 
+  .footer-logo-link {
+    margin-bottom: 0;
+  }
+
   .footer-first-part {
     flex-direction: row;
     justify-content: space-between;
@@ -176,9 +181,6 @@
     margin-bottom: 52px;
   }
 
-  .footer-logo-link {
-    padding-bottom: 0;
-  }
 
   .footer-nav-list {
     margin-bottom: 0;
