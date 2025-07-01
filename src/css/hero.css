@@ -21,7 +21,6 @@
 }
 .hero-button {
   display: inline-block;
-  /* min-width: 288px; */
   max-width: 288px;
   width: 100%;
   border: 1px solid #030a06;
@@ -88,6 +87,7 @@
     max-width: 640px;
     font-size: 56px;
   }
+
   .hero-img {
     max-width: 1312px;
     max-height: 498px;
