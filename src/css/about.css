@@ -29,7 +29,7 @@
 }
 
 .about {
-  background-image: url(/img/about/about-mobil-min.jpg);
+  background-image: url(/img/about/about-mobil-min.webp);
   max-width: 1440px;
   background-color: #75d281;
   background-repeat: no-repeat;
@@ -41,19 +41,19 @@
 
 @media screen and (min-resolution: 2x) {
   .about {
-    background-image: url(/img/about/about-mobil@2x-min.jpg);
+    background-image: url(/img/about/about-mobil@2x-min.webp);
   }
 }
 
 @media screen and (min-width: 768px) {
   .about {
-    background-image: url(/img/about/about-tablet-min.jpg);
+    background-image: url(/img/about/about-tablet-min.webp);
     padding: 80px 0;
   }
 
   @media screen and (min-resolution: 2x) {
     .about {
-      background-image: url(/img/about/about-tablet@2x-min.jpg);
+      background-image: url(/img/about/about-tablet@2x-min.webp);
     }
   }
 
@@ -74,14 +74,14 @@
 
 @media screen and (min-width: 1440px) {
   .about {
-    background-image: url(/img/about/about-min.jpg);
+    background-image: url(/img/about/about-min.webp);
     padding-top: 112px;
     padding-bottom: 94px;
   }
 
   @media screen and (min-resolution: 2x) {
     .about {
-      background-image: url(/img/about/about@2fx-min.jpg);
+      background-image: url(/img/about/about@2fx-min.webp);
     }
   }
 
