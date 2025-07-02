@@ -30,7 +30,7 @@
   display: flex;
   flex-direction: column;
   background: transparent;
-  transition: box-shadow 250ms ease;
+  /* transition: box-shadow 250ms ease; */
 }
 
 .bags-image {
@@ -116,6 +116,10 @@
 
   .bags-item {
     width: calc((100% - 72px) / 4);
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
   }
 
   .assortment-title {

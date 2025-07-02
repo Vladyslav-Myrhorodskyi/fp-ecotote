@@ -20,6 +20,7 @@
       8. іконкам..............................................global-icon
       9. контейнери логотипів.................................global-logo
       10.логотип..............................................global-logo-icon
+      11. ефект збільшення при hover...........................global-box
     
   */
 
@@ -223,4 +224,17 @@
 
 .footer-media-link:hover .footer-social-link {
   transform: scale(1.2);
+}
+
+/*--ефект виділення--*/
+.global-box {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.global-box:hover,
+.global-box:focus {
+  scale: (1.1);
+  box-shadow: 1.05em 10px;
+  transform: scale(1.05) translateY(-4px);
+  box-shadow: 0 8px 16px #113916;
 }
