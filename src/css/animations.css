@@ -2,6 +2,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -213,3 +214,13 @@
 .lift-on-hover:focus {
   transform: scale(1.05);
 } */
+
+/* -- ефект при наведенні на іконки соцмереж */
+
+.footer-social-link {
+  transition: transform 0.3s ease;
+}
+
+.footer-media-link:hover .footer-social-link {
+  transform: scale(1.2);
+}
