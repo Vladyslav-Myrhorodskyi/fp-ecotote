@@ -1,11 +1,4 @@
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100; /* щоб перекривав інші елементи */
-
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* легка тінь для краси */
   background-color: #75d281;
 }
 
@@ -163,11 +156,7 @@
   z-index: 999;
 }
 
-/* .mobil-menu.is-open {
-  opacity: 1;
-  pointer-events: auto;
-} */
-.mobil-menu:target {
+.mobil-menu.is-open {
   opacity: 1;
   pointer-events: auto;
 }
@@ -199,12 +188,6 @@
   opacity: 0;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/*додали :target  */
-.mobil-menu:target .mobil-menu-container {
-  transform: scale(1);
-  opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
