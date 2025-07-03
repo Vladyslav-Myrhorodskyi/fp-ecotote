@@ -239,10 +239,12 @@
   box-shadow: 0 8px 16px #113916;
 }
 
+
 /*--плавний скрол--*/
 html {
   scroll-behavior: smooth;
   outline: 3px solid transparent;
+>>>>>>> 528dea8 (add :target for mobile menu toggle and section highlight on anchor click)
   transition: outline-color 0.5s ease, background-color 0.5s ease;
 }
 
