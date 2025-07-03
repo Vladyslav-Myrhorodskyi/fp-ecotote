@@ -239,24 +239,18 @@
   box-shadow: 0 8px 16px #113916;
 }
 
-/* плавний скрол */
+/*--плавний скрол--*/
 html {
-  scroll-behavior: smooth; /* ⬅️ робить плавний скрол */
-}
-
-section {
-  /* padding: 100px;
-  margin-bottom: 50px;
-  background-color: #f0f0f0; */
-  outline: 3px solid transparent; /* щоб не стрибало при появі outline */
+  scroll-behavior: smooth;
+  outline: 3px solid transparent;
   transition: outline-color 0.5s ease, background-color 0.5s ease;
 }
 
 section:target {
-  /* outline-color: lime; */
   background-color: #e0ffe0;
   scroll-margin-top: 64px;
 }
+
 @media screen and (min-width: 1440px) {
   section:target {
     scroll-margin-top: 71px;
